@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Degradados.CSS</title>
+
+    <!-- CDN de VUE -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="header">
+            {{title}}
+        </h1>
+        <hr>
+
+        <form>
+            <div class="colores contenedor">
+                <div>
+                    <label for="">
+                        <input type="color" name="" id="" v-model="fcolor">
+                    </label>
+                    <p>
+                        HEX: {{fcolor}}
+                    </p>
+                </div>
+                <div>
+                    <label for="">
+                        <input type="color" name="" id="" v-model="scolor">
+                    </label>
+                    <p>
+                        HEX: {{scolor}}
+                    </p>
+                </div>
+            </div>
+        </form>
+
+        <form class="contenedor mb-1">
+            
+            <div class="areaCodigo">
+                <p>{{setColor}}</p>
+            </div>
+
+            <div class="direccion">
+                <label for="right">
+                    <input type="radio" value="1" v-model.number="orientacion" name="right" id="right"> Right
+                </label>
+                <label for="left">
+                    <input type="radio" value="2" v-model.number="orientacion" name="left" id="left"> Left
+                </label>
+                <label for="up">
+                    <input type="radio" value="3" v-model.number="orientacion" name="up" id="up"> Up
+                </label>
+                <label for="down">
+                    <input type="radio" value="4" v-model.number="orientacion" name="down" id="down"> Down
+                </label>
+            </div>
+        </form>
+        
+
+        <div class="areaGen" :style="setColor"></div>
+
+    </div>
+
+
+    <footer class="footer">
+        <h6>Elio Lucero. Todos los derechos reservados - 2021</h6>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/mountApp.js"></script>
+</body>
+</html>
