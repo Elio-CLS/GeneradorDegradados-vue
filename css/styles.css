@@ -59,6 +59,10 @@ h1, h2, h3, h4 {
     line-height: 1.8;
 }
 
+h2 {
+    font-size: 1rem;
+}
+
 hr {
     margin: 0;
     border: solid 1px rgb(58, 58, 58); 

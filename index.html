@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Degradados para CSS">
 
+    <!-- Metadata para PWA -->
+    <!-- Modificar color barra de estado ANDROID -->
+    <meta name="theme-color" content="#1f1f1f" />
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Modificar Barra de estado IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link rel="apple-touch-startup-image" href="img/favicon.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Hojas de estilos -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -24,16 +47,16 @@
         <form>
             <div class="colores contenedor">
                 <div>
-                    <label for="">
-                        <input type="color" name="" id="" v-model="fcolor">
+                    <label>
+                        <input type="color" v-model="fcolor">
                     </label>
                     <p>
                         HEX: {{fcolor}}
                     </p>
                 </div>
                 <div>
-                    <label for="">
-                        <input type="color" name="" id="" v-model="scolor">
+                    <label>
+                        <input type="color" v-model="scolor">
                     </label>
                     <p>
                         HEX: {{scolor}}
@@ -71,9 +94,10 @@
 
 
     <footer class="footer">
-        <h6>Elio Lucero. Todos los derechos reservados - 2021</h6>
+        <h2>Elio Lucero. Todos los derechos reservados - 2021</h2>
     </footer>
     
+    <script src="load.js"></script>
     <script src="js/main.js"></script>
     <script src="js/mountApp.js"></script>
 </body>
